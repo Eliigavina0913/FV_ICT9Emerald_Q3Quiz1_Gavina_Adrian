@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Q3Q1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: darkslategrey;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+        var x = 8;
+        var y = 5;
+        var z = x + y;
+        var a = x - y;
+        var b = 8 > 5;    
+        var c = 8 < 5;   
+        var d = b && c; 
+        var e = b || c;
+        var f = !b;
+    </script>
+
+<div class="container text-center mt-5">
+    <h1>Arithmetic Operators</h1>
+    <p id="arithmetic" class="text-light"></p>
+    <p id="arithmetic2" class="text-light"></p>
+    <button type="button" class="btn btn-primary" onclick="document.getElementById('arithmetic').innerHTML = z; document.getElementById('arithmetic2').innerHTML = a">Show Results</button>
+
+    <hr class="text-light my-5">
+
+    <h1>Comparison Operators</h1>
+    <p id="comparison" class="text-light"></p>
+    <p id="comparison2" class="text-light"></p>
+       
+    <button type="button" class="btn btn-success" onclick="
+    document.getElementById('comparison').innerHTML = 'x > y: ' + b; 
+    document.getElementById('comparison2').innerHTML = 'x < y: ' + c;">Show Results</button>
+
+    <hr class="text-light my-5">
+
+    <h1>Logical Operators</h1>
+    <p id="logical" class="text-light"></p>
+    <p id="logical2" class="text-light"></p>
+    <button type="button" class="btn btn-warning" onclick="
+            document.getElementById('logical').innerHTML = 'b && c: ' + d; 
+            document.getElementById('logical2').innerHTML = 'b || c: ' + e + ' | NOT b: ' + f;
+        ">Show Results</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
